@@ -1,6 +1,5 @@
 package com.example.uppgiftTest1demo;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 public class ValidatorTest {
 
@@ -73,5 +72,21 @@ public class ValidatorTest {
   @Test
   public void withOtherSymbols(){
       Assertions.assertFalse(Validator.isEmailValid("vijaya#%sdff.se"));
+  }
+  @BeforeAll
+    public static void print(){
+      System.out.println("Hai This is Vijaya");
+  }
+  @AfterAll
+    public static void last(){
+      System.out.println("Good Job! Continue learning");
+  }
+  @AfterEach
+    public  void afterEachTest(){
+      System.out.println("Thank you");
+  }
+  @BeforeEach
+    public void beforeEachTest(){
+      System.out.println("Continue Testing");
   }
 }
