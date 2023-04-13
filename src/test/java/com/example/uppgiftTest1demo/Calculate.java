@@ -9,7 +9,7 @@ public class Calculate {
     void additionShouldBeTrue(){
         int a=2, b=3;
 
-        int Expected = 5;
+        int Expected = 7;
         int Result = c.add(a,b);
        Assertions.assertEquals(Result,Expected);
     }
