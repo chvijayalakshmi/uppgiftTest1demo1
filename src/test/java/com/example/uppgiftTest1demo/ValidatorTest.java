@@ -7,8 +7,8 @@ public class ValidatorTest {
     @Test
     public void mobileNoNotStartWithZero() {
 
-        String c = "123456789";
-        Assertions.assertFalse(Validator.isPhoneNumberValid("1234567809"));
+        String c = "012345678";
+        Assertions.assertFalse(Validator.isPhoneNumberValid(c));
     }
 
     @Test
